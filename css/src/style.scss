@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Playfair+Display');
+
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Playfair Display', serif;
+
+body{
+	background-color: #000;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: .005em;
+}
+
+
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+
+// Header
+.ba-header {
+	height: 80px;
+	padding: 0 30px;
+
+	&__logo {
+		font-size: 36px;
+		letter-spacing: .005em;
+		font-weight: 600;
+		line-height: 80px;
+		height: 80px;
+		float: left;
+
+		a {
+			color: #fff;
+			text-decoration: none;
+			transition: color ease .5s;
+
+			&:hover {
+				color: #eecd31;
+				text-decoration: none;
+			}
+		}
+	}
+
+	&__nav {
+		float: right;
+	}
+
+	&__menu {
+		list-style-type: none;
+		margin: 0;
+	}
+
+	&__item {
+		display: inline-block;
+		font-size: 14px;		
+		font-weight: 600;
+		line-height: 80px;
+		height: 80px;
+		padding: 0 0 0 40px;
+
+		a {
+			color: #fff;
+			text-decoration: none;
+			transition: color ease .5s;
+
+			&:hover {
+				color: #eecd31;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+// Slider
+.ba-slider {
+	height: calc(100vh - 80px);
+	width: 100%;
+	position: relative;
+	overflow-x: hidden;	
+
+	.slick-list, .slick-track {
+		// height: calc(100vh - 80px);
+		height: 100%;
+	}
+
+	.slick-slide {
+		display: flex;
+	}
+
+	&__item {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: #fff;
+		text-align: center;
+
+		h1 {
+			font-family: 'Playfair Display', serif;
+			font-size: 80px;
+			font-weight: 400;
+		}
+
+		p {
+			font-size: 30px;
+			font-weight: 300;
+		}
+	}
+}
+
+.ba-button {
+	background-color: #eecd31;
+	color: #fff;
+	border: 2px solid #eecd31;
+	line-height: 56px;
+	height: 60px;
+	padding: 0 30px;
+	transition: all ease .5s;
+	border-radius: 24px;
+	// display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	&:hover {
+		background-color: transparent;
+		color: #eecd31
+	}
+}
+
+
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}

@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Playfair+Display");
+body {
+  background-color: #000;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: .005em; }
+
+/* Layout */
+.ba-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1200px; }
+
+.ba-header {
+  height: 80px;
+  padding: 0 30px; }
+  .ba-header__logo {
+    font-size: 36px;
+    letter-spacing: .005em;
+    font-weight: 600;
+    line-height: 80px;
+    height: 80px;
+    float: left; }
+    .ba-header__logo a {
+      color: #fff;
+      text-decoration: none;
+      -webkit-transition: color ease .5s;
+      -o-transition: color ease .5s;
+      transition: color ease .5s; }
+      .ba-header__logo a:hover {
+        color: #eecd31;
+        text-decoration: none; }
+  .ba-header__nav {
+    float: right; }
+  .ba-header__menu {
+    list-style-type: none;
+    margin: 0; }
+  .ba-header__item {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 80px;
+    height: 80px;
+    padding: 0 0 0 40px; }
+    .ba-header__item a {
+      color: #fff;
+      text-decoration: none;
+      -webkit-transition: color ease .5s;
+      -o-transition: color ease .5s;
+      transition: color ease .5s; }
+      .ba-header__item a:hover {
+        color: #eecd31;
+        text-decoration: none; }
+
+.ba-slider {
+  height: calc(100vh - 80px);
+  width: 100%;
+  position: relative;
+  overflow-x: hidden; }
+  .ba-slider .slick-list, .ba-slider .slick-track {
+    height: 100%; }
+  .ba-slider .slick-slide {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .ba-slider__item {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+    text-align: center; }
+    .ba-slider__item h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 80px;
+      font-weight: 400; }
+    .ba-slider__item p {
+      font-size: 30px;
+      font-weight: 300; }
+
+.ba-button {
+  background-color: #eecd31;
+  color: #fff;
+  border: 2px solid #eecd31;
+  line-height: 56px;
+  height: 60px;
+  padding: 0 30px;
+  -webkit-transition: all ease .5s;
+  -o-transition: all ease .5s;
+  transition: all ease .5s;
+  border-radius: 24px;
+  text-decoration: none;
+  text-transform: uppercase; }
+  .ba-button:hover {
+    background-color: transparent;
+    color: #eecd31; }
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button {
+  -webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  -moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  -o-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in; }
+
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button {
+  display: inline-block; }
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  -webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  -moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  -o-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in; }
